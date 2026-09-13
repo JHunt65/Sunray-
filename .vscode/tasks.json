@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Upload Sunray Live Site",
+      "type": "shell",
+      "command": "scp -P 2222 -r \"${workspaceFolder}/assets\" \"${workspaceFolder}\"/*.html \"${workspaceFolder}\"/*.png \"${workspaceFolder}\"/*.jpg \"${workspaceFolder}\"/*.JPG sun101@192.185.39.72:/home1/sun101/public_html/",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Placeholder blog image two">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fce3b3"/>
+      <stop offset="100%" stop-color="#fecc66"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g2)"/>
+  <rect x="820" y="90" width="250" height="250" rx="32" fill="rgba(11,110,133,0.16)"/>
+  <rect x="890" y="360" width="190" height="190" rx="95" fill="rgba(11,110,133,0.18)"/>
+  <rect x="120" y="260" width="650" height="16" rx="8" fill="rgba(11,110,133,0.42)"/>
+  <rect x="120" y="295" width="500" height="16" rx="8" fill="rgba(11,110,133,0.35)"/>
+  <text x="120" y="210" font-family="Poppins, Arial, sans-serif" font-size="52" fill="#0b6e85" font-weight="700">New Resource Soon</text>
+</svg>
