@@ -1,15 +1,72 @@
 const navToggle = document.getElementById('nav-toggle');
 const siteNav = document.querySelector('.site-nav');
 
+function setupSiteNavigation() {
+  if (!siteNav) return;
+
+  const servicesLink = Array.from(siteNav.querySelectorAll(':scope > a'))
+    .find((link) => link.textContent.trim() === 'Services');
+
+  if (servicesLink && !siteNav.querySelector('.nav-dropdown')) {
+    const dropdown = document.createElement('div');
+    dropdown.className = 'nav-dropdown';
+
+    const trigger = document.createElement('button');
+    trigger.className = 'nav-dropdown-trigger';
+    trigger.type = 'button';
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.setAttribute('aria-haspopup', 'true');
+    trigger.setAttribute('aria-controls', 'faq-menu');
+    trigger.innerHTML = 'FAQ <span aria-hidden="true">&#9662;</span>';
+
+    const menu = document.createElement('div');
+    menu.className = 'nav-dropdown-menu';
+    menu.id = 'faq-menu';
+    menu.innerHTML = '<a href="faq.html">FAQ</a><a href="good-faith-estimate.html">Good Faith Estimate</a>';
+
+    trigger.addEventListener('click', () => {
+      const isOpen = dropdown.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    dropdown.append(trigger, menu);
+    servicesLink.insertAdjacentElement('afterend', dropdown);
+  }
+
+  const footerLinks = document.querySelector('.footer-links');
+  if (footerLinks && !footerLinks.querySelector('a[href="faq.html"]')) {
+    const faqLink = document.createElement('a');
+    faqLink.href = 'faq.html';
+    faqLink.textContent = 'FAQ';
+    footerLinks.append(faqLink);
+  }
+}
+
+setupSiteNavigation();
+
+navToggle?.setAttribute('aria-controls', 'site-navigation');
+siteNav?.setAttribute('id', 'site-navigation');
+navToggle?.setAttribute('aria-expanded', 'false');
+
 navToggle?.addEventListener('click', () => {
-  siteNav?.classList.toggle('open');
+  const isOpen = siteNav?.classList.toggle('open') || false;
+  navToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
 const navLinks = document.querySelectorAll('.site-nav a');
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     siteNav?.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
   });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    siteNav?.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    document.querySelector('.nav-dropdown')?.classList.remove('open');
+  }
 });
 
 if (document.title.startsWith('Becky Dalton')) {
@@ -63,15 +120,6 @@ if (document.title.startsWith('Derek Wolfgramm')) {
   }
 }
 
-if (document.title.startsWith('Sarah Cowley')) {
-  document.body.classList.add('sarah-page');
-  const sarahPhoto = document.querySelector('.staff-bio-photo');
-  if (sarahPhoto) {
-    sarahPhoto.src = 'Sarah%20Cowley%20headshot.JPG';
-    sarahPhoto.alt = 'Sarah Cowley';
-  }
-}
-
 const localStaffPhotos = {
   'Sariah Hunt': 'assets/employee-images/Sariah-scaled.jpg',
   'Weston Hunt': 'assets/employee-images/Weston-scaled.jpg',
@@ -87,14 +135,32 @@ const localStaffPhotos = {
   'April Laupapa': 'assets/employee-images/April.jpg',
   'Renee Madsen': 'assets/employee-images/Renee-scaled.jpg',
   'Lexi Murray': 'assets/employee-images/Lexi-scaled.jpg',
+  'Whitney Hill': 'Emplolyee%20Images/WhitneyHill-scaled.jpg',
+  'Amber Paul': 'Emplolyee%20Images/AmberJPG.jpg',
+  'Heidi Josephson': 'Emplolyee%20Images/HeidiJosephson.png',
 };
 
 const localStaffPhoto = Object.entries(localStaffPhotos)
   .find(([name]) => document.title.startsWith(name));
 const staffBioPhoto = document.querySelector('.staff-bio-photo');
 if (localStaffPhoto && staffBioPhoto) {
-  staffBioPhoto.src = localStaffPhoto[1];
-  staffBioPhoto.alt = localStaffPhoto[0];
+  if (staffBioPhoto.matches('.staff-bio-photo-placeholder')) {
+    const replacementPhoto = document.createElement('img');
+    replacementPhoto.className = 'staff-bio-photo';
+    replacementPhoto.src = localStaffPhoto[1];
+    replacementPhoto.alt = localStaffPhoto[0];
+    staffBioPhoto.replaceWith(replacementPhoto);
+  } else {
+    staffBioPhoto.src = localStaffPhoto[1];
+    staffBioPhoto.alt = localStaffPhoto[0];
+  }
+}
+
+if (document.title.startsWith('Bradyn Hattendorf')) {
+  const profileLayouts = document.querySelectorAll('.staff-bio-layout');
+  profileLayouts.forEach((layout, index) => {
+    if (index > 0) layout.remove();
+  });
 }
 
 function updateFooterYear() {
