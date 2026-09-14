@@ -146,69 +146,6 @@ select {
   color: var(--primary);
 }
 
-.nav-dropdown {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-
-.nav-dropdown-trigger {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  border: 0;
-  padding: 0;
-  background: transparent;
-  color: var(--muted);
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.nav-dropdown-trigger:hover,
-.nav-dropdown-trigger:focus-visible {
-  color: var(--primary);
-}
-
-.nav-dropdown-trigger span {
-  font-size: 0.7em;
-}
-
-.nav-dropdown-menu {
-  position: absolute;
-  top: calc(100% + 0.7rem);
-  left: 50%;
-  display: grid;
-  min-width: 12rem;
-  padding: 0.45rem;
-  border: 1px solid rgba(16, 42, 67, 0.1);
-  border-radius: 0.75rem;
-  background: white;
-  box-shadow: var(--shadow);
-  opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, -0.35rem);
-  transition: opacity 0.18s ease, transform 0.18s ease;
-  z-index: 20;
-}
-
-.nav-dropdown:hover .nav-dropdown-menu,
-.nav-dropdown:focus-within .nav-dropdown-menu,
-.nav-dropdown.open .nav-dropdown-menu {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, 0);
-}
-
-.nav-dropdown-menu a {
-  padding: 0.65rem 0.75rem;
-  border-radius: 0.45rem;
-}
-
-.nav-dropdown-menu a:hover,
-.nav-dropdown-menu a:focus-visible {
-  background: rgba(11, 110, 133, 0.08);
-}
-
 .site-nav .button.button-primary {
   margin-left: 0;
 }
@@ -1593,41 +1530,6 @@ select {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
-  }
-
-  .nav-dropdown {
-    display: block;
-    width: 100%;
-  }
-
-  .nav-dropdown-trigger {
-    width: 100%;
-    justify-content: space-between;
-    padding: 0.55rem 0;
-    text-align: left;
-  }
-
-  .nav-dropdown-menu {
-    position: static;
-    display: none;
-    min-width: 0;
-    margin: 0 0 0.35rem 0.6rem;
-    padding: 0.25rem 0 0.25rem 0.7rem;
-    border: 0;
-    border-left: 2px solid rgba(11, 110, 133, 0.2);
-    border-radius: 0;
-    box-shadow: none;
-    opacity: 1;
-    transform: none;
-  }
-
-  .nav-dropdown:hover .nav-dropdown-menu,
-  .nav-dropdown:focus-within .nav-dropdown-menu {
-    display: none;
-  }
-
-  .nav-dropdown.open .nav-dropdown-menu {
-    display: grid;
   }
 
   .nav-toggle {

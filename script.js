@@ -4,33 +4,13 @@ const siteNav = document.querySelector('.site-nav');
 function setupSiteNavigation() {
   if (!siteNav) return;
 
-  const servicesLink = Array.from(siteNav.querySelectorAll(':scope > a'))
-    .find((link) => link.textContent.trim() === 'Services');
-
-  if (servicesLink && !siteNav.querySelector('.nav-dropdown')) {
-    const dropdown = document.createElement('div');
-    dropdown.className = 'nav-dropdown';
-
-    const trigger = document.createElement('button');
-    trigger.className = 'nav-dropdown-trigger';
-    trigger.type = 'button';
-    trigger.setAttribute('aria-expanded', 'false');
-    trigger.setAttribute('aria-haspopup', 'true');
-    trigger.setAttribute('aria-controls', 'faq-menu');
-    trigger.innerHTML = 'FAQ <span aria-hidden="true">&#9662;</span>';
-
-    const menu = document.createElement('div');
-    menu.className = 'nav-dropdown-menu';
-    menu.id = 'faq-menu';
-    menu.innerHTML = '<a href="faq.html">FAQ</a><a href="good-faith-estimate.html">Good Faith Estimate</a>';
-
-    trigger.addEventListener('click', () => {
-      const isOpen = dropdown.classList.toggle('open');
-      trigger.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    dropdown.append(trigger, menu);
-    servicesLink.insertAdjacentElement('afterend', dropdown);
+  if (!siteNav.querySelector('a[href="faq.html"]')) {
+    const servicesLink = Array.from(siteNav.querySelectorAll(':scope > a'))
+      .find((link) => link.textContent.trim() === 'Services');
+    const faqLink = document.createElement('a');
+    faqLink.href = 'faq.html';
+    faqLink.textContent = 'FAQ';
+    servicesLink?.insertAdjacentElement('afterend', faqLink);
   }
 
   const footerLinks = document.querySelector('.footer-links');
@@ -65,7 +45,6 @@ document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     siteNav?.classList.remove('open');
     navToggle?.setAttribute('aria-expanded', 'false');
-    document.querySelector('.nav-dropdown')?.classList.remove('open');
   }
 });
 
