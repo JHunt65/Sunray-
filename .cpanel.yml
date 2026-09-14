@@ -1,10 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/sun101/public_html/
-    - /bin/cp -R assets "$DEPLOYPATH"
-    - /bin/cp -R "Employee Images" "$DEPLOYPATH"
-    - /bin/cp -f *.html "$DEPLOYPATH"
-    - /bin/cp -f *.png "$DEPLOYPATH"
-    - /bin/cp -f *.jpg "$DEPLOYPATH"
-    - /bin/cp -f *.JPG "$DEPLOYPATH"
+    - /bin/bash deploy.sh
