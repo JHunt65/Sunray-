@@ -5,6 +5,6 @@ deployment:
     - /bin/cp -R assets "$DEPLOYPATH"
     - /bin/cp -R "Employee Images" "$DEPLOYPATH"
     - /bin/cp -f *.html "$DEPLOYPATH"
-    - /bin/cp -f *.png "$DEPLOYPATH" 2>/dev/null || true
-    - /bin/cp -f *.jpg "$DEPLOYPATH" 2>/dev/null || true
-    - /bin/cp -f *.JPG "$DEPLOYPATH" 2>/dev/null || true
+    - /bin/cp -f *.png "$DEPLOYPATH"
+    - /bin/cp -f *.jpg "$DEPLOYPATH"
+    - /bin/cp -f *.JPG "$DEPLOYPATH"
