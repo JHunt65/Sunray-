@@ -966,8 +966,8 @@ select {
 }
 
 .bradyn-page .staff-bio-photo {
-  object-position: center top;
-  transform: translateY(6.5%) scale(0.918);
+  object-position: center center;
+  transform: translateY(6.5%) scale(1.3);
 }
 
 .sabrina-page .staff-bio-photo {
@@ -987,6 +987,48 @@ select {
 .staff-profile-image img[src*="Sarah%20Cowley"] {
   object-position: center top;
   transform: none;
+}
+
+.staff-profile-image.staff-profile-lacey img {
+  object-position: center center;
+  transform: scale(1.45);
+}
+
+.staff-profile-image.staff-profile-lacey:hover img,
+.staff-profile-image.staff-profile-lacey:focus-within img {
+  transform: scale(1.55);
+}
+
+.staff-profile-image.staff-profile-bradyn img {
+  object-position: center center;
+  transform: translateX(-14%) scale(1.8);
+}
+
+.staff-profile-image.staff-profile-bradyn:hover img,
+.staff-profile-image.staff-profile-bradyn:focus-within img {
+  transform: translateX(-14%) scale(1.9);
+}
+
+@media (min-width: 861px) {
+  .staff-profile-image.staff-profile-lacey img {
+    transform: scale(1.6);
+  }
+
+  .staff-profile-image.staff-profile-lacey:hover img,
+  .staff-profile-image.staff-profile-lacey:focus-within img {
+    transform: scale(1.7);
+  }
+}
+
+@media (min-width: 861px) {
+  .staff-profile-image.staff-profile-bradyn img {
+    transform: translate(-22%, 15%) scale(1.85);
+  }
+
+  .staff-profile-image.staff-profile-bradyn:hover img,
+  .staff-profile-image.staff-profile-bradyn:focus-within img {
+    transform: translate(-22%, 15%) scale(1.95);
+  }
 }
 
 .staff-profile-image:hover img[src*="Sarah%20Cowley"],
@@ -1666,6 +1708,15 @@ select {
   .staff-profile-image:hover img,
   .staff-profile-image:focus-within img {
     transform: none;
+  }
+
+  .staff-profile-image.staff-profile-bradyn img {
+    transform: translateX(-14%) scale(1.8);
+  }
+
+  .staff-profile-image.staff-profile-bradyn:hover img,
+  .staff-profile-image.staff-profile-bradyn:focus-within img {
+    transform: translateX(-14%) scale(1.9);
   }
 
   .team-section-title {

@@ -108,7 +108,7 @@ const localStaffPhotos = {
   'Cecilia Trujillo': 'assets/employee-images/Cecilia-scaled.jpg',
   'Colton Jones': 'assets/employee-images/Colton-scaled.jpg',
   'Lichelle Fewkes': 'assets/employee-images/Lichelle-scaled.jpg',
-  'Bradyn Hattendorf': 'assets/employee-images/Bradyn.jpg',
+  'Bradyn Hattendorf': 'assets/employee-images/Bradyn.jpg?v=2',
   'Becky Dalton': 'assets/employee-images/Becky-scaled.jpg',
   'Sydney Rasmussen': 'assets/employee-images/Sydney-scaled.jpg',
   'April Laupapa': 'assets/employee-images/April.jpg',
