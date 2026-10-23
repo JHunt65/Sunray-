@@ -1,6 +1,9 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Londrina+Solid:wght@400;900&display=swap');
+
 :root {
   color-scheme: light;
-  /* Load Poppins for UI and Rye for display headings (Google Fonts) */
+  /* Poppins for UI and Londrina Solid for display headings (Google Fonts) */
   /* Imported via CSS @import below */
   font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
@@ -22,12 +25,13 @@
   --shadow: 0 24px 80px rgba(18, 52, 84, 0.08);
 }
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Rye&display=swap');
-
 /* Headline font */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Rye, Georgia, "Times New Roman", serif;
+  font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
 }
 
 * {
@@ -273,8 +277,8 @@ select {
 .hero h1 {
   margin: 0;
   font-size: clamp(2.75rem, 4vw, 4.5rem);
-  line-height: 1.1;
-  letter-spacing: 0.02em;
+  line-height: 1.12;
+  letter-spacing: 0.03em;
 }
 
 .hero p {
@@ -742,7 +746,7 @@ select {
   border: 2px solid #0b6e85;
   background: #0b6e85;
   color: #ffffff;
-  font-family: Rye, Georgia, "Times New Roman", serif;
+  font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
   font-size: clamp(1.47rem, 2.352vw, 2.205rem);
   font-weight: 700;
   line-height: 1;
@@ -1264,7 +1268,7 @@ select {
 
 .footer-title {
   margin: 0;
-  font-family: Rye, Georgia, "Times New Roman", serif;
+  font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
   font-size: 1.3rem;
   color: #0b6e85;
 }
@@ -1738,19 +1742,20 @@ body.staff-page main > .section {
 .team-section-inner {
   position: relative;
   padding-top: 1rem;
+  container-type: inline-size;
 }
 
 .team-section-title {
-  position: absolute;
-  top: -2%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: Rye, Georgia, "Times New Roman", serif;
-  font-size: clamp(5.175rem, 6.9vw, 8.05rem);
-  font-weight: 700;
-  line-height: 0.88;
-  text-transform: uppercase;
+  position: relative;
+  display: block;
   text-align: center;
+  font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 16.6cqw, 17rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  word-spacing: 0;
+  text-transform: uppercase;
   color: #0b6e85;
   text-shadow:
     -2px -2px 0 rgba(156, 201, 194, 0.85),
@@ -1758,13 +1763,12 @@ body.staff-page main > .section {
     -2px 2px 0 rgba(156, 201, 194, 0.85),
     2px 2px 0 rgba(156, 201, 194, 0.85);
   z-index: 2;
-  width: min(100%, 60rem);
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto -0.2em;
 }
 
 @media (min-width: 861px) {
   .team-section-title {
-    width: max-content;
     white-space: nowrap;
   }
 }
@@ -1773,7 +1777,7 @@ body.staff-page main > .section {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .team-card {
@@ -1863,7 +1867,7 @@ body.staff-page main > .section {
   color: #0b6e85;
   padding: 0.85rem 1rem;
   border-radius: 999px;
-  font-family: Rye, Georgia, "Times New Roman", serif;
+  font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
   font-size: clamp(1.3rem, 2vw, 2rem);
   font-weight: 700;
   line-height: 1.05;
@@ -1885,9 +1889,7 @@ body.staff-page main > .section {
   }
 
   .team-section-title {
-    top: -4%;
-    transform: translateX(-50%);
-    font-size: clamp(3rem, 8vw, 4.5rem);
-    width: min(100%, 90vw);
+    font-size: clamp(2.4rem, 16.6cqw, 6.5rem);
+    width: 100%;
   }
 }
