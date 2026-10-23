@@ -147,7 +147,7 @@ select {
 }
 
 .site-nav a:hover {
-  color: var(--primary);
+  color: var(--brand-teal-1);
 }
 
 .site-nav .button.button-primary {
@@ -173,7 +173,7 @@ select {
 }
 
 .phone-link:hover {
-  color: var(--primary);
+  color: var(--brand-teal-1);
 }
 
 .phone-icon {
@@ -317,7 +317,7 @@ select {
 
 .button-secondary {
   background: rgba(255, 255, 255, 1);
-  color: var(--primary);
+  color: var(--brand-teal-1);
   border-color: rgba(255, 255, 255, 0.9);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
@@ -382,7 +382,7 @@ select {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.75rem;
-  color: var(--primary);
+  color: var(--brand-teal-1);
   margin-bottom: 0.75rem;
 }
 
@@ -448,7 +448,7 @@ select {
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--brand-teal-1);
 }
 
 .contact-icon {
@@ -535,7 +535,7 @@ select {
 }
 
 .map-card-meta a {
-  color: var(--primary);
+  color: var(--brand-teal-1);
   font-weight: 600;
 }
 
@@ -960,8 +960,8 @@ select {
   place-items: center;
   min-height: 320px;
   padding: 2rem;
-  background: var(--brand-teal-1);
-  color: var(--primary);
+  background: var(--brand-teal-2);
+  color: var(--brand-teal-1);
   text-align: center;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -1330,7 +1330,7 @@ select {
 .footer-links a:hover,
 .footer-contact a:hover,
 .footer-bottom a:hover {
-  color: var(--primary);
+  color: var(--brand-teal-1);
 }
 
 .footer-bottom {
@@ -1392,7 +1392,7 @@ select {
 
 .crisis-panel h2 {
   margin-top: 0;
-  color: var(--brand-teal-2);
+  color: var(--brand-teal-1);
 }
 
 .crisis-panel p:last-child {
@@ -1416,7 +1416,7 @@ select {
 .faq-item summary {
   position: relative;
   padding: 1rem 3rem 1rem 1.2rem;
-  color: var(--primary);
+  color: var(--brand-teal-1);
   font-weight: 700;
   cursor: pointer;
   list-style: none;
@@ -1431,7 +1431,7 @@ select {
   position: absolute;
   top: 50%;
   right: 1.2rem;
-  color: var(--brand-teal-2);
+  color: var(--brand-teal-1);
   font-size: 1.4rem;
   line-height: 1;
   transform: translateY(-50%);
@@ -1756,12 +1756,13 @@ body.staff-page main > .section {
   letter-spacing: 0.02em;
   word-spacing: 0;
   text-transform: uppercase;
-  color: #0b6e85;
+  color: #9ac9c2;
   text-shadow:
-    -2px -2px 0 rgba(156, 201, 194, 0.85),
-    2px -2px 0 rgba(156, 201, 194, 0.85),
-    -2px 2px 0 rgba(156, 201, 194, 0.85),
-    2px 2px 0 rgba(156, 201, 194, 0.85);
+    -2px -2px 0 #0b6e85,
+    2px -2px 0 #0b6e85,
+    -2px 2px 0 #0b6e85,
+    2px 2px 0 #0b6e85,
+    0 4px 10px rgba(11, 110, 133, 0.35);
   z-index: 2;
   width: 100%;
   margin: 0 auto -0.2em;
@@ -1863,8 +1864,8 @@ body.staff-page main > .section {
 }
 
 .team-card.centered .team-card-copy span {
-  background: rgba(255,255,255,0.48);
-  color: #0b6e85;
+  background: rgba(11, 110, 133, 0.55);
+  color: #9ac9c2;
   padding: 0.85rem 1rem;
   border-radius: 999px;
   font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
@@ -1875,10 +1876,10 @@ body.staff-page main > .section {
   text-transform: uppercase;
   max-width: 100%;
   text-shadow:
-    -1px -1px 0 rgba(156, 201, 194, 0.85),
-    1px -1px 0 rgba(156, 201, 194, 0.85),
-    -1px 1px 0 rgba(156, 201, 194, 0.85),
-    1px 1px 0 rgba(156, 201, 194, 0.85);
+    -1px -1px 0 #0b6e85,
+    1px -1px 0 #0b6e85,
+    -1px 1px 0 #0b6e85,
+    1px 1px 0 #0b6e85;
 }
 
 
