@@ -965,11 +965,6 @@ select {
   letter-spacing: 0.08em;
 }
 
-.bradyn-page .staff-bio-photo {
-  object-position: center center;
-  transform: translateY(6.5%) scale(1.3);
-}
-
 .sabrina-page .staff-bio-photo {
   object-position: center top;
   transform: translateY(6%) scale(0.918);
@@ -991,43 +986,27 @@ select {
 
 .staff-profile-image.staff-profile-lacey img {
   object-position: center center;
-  transform: scale(1.45);
+  transform-origin: 50% 42%;
+  transform: scale(2);
 }
 
 .staff-profile-image.staff-profile-lacey:hover img,
 .staff-profile-image.staff-profile-lacey:focus-within img {
-  transform: scale(1.55);
+  transform: scale(2.1);
 }
 
 .staff-profile-image.staff-profile-bradyn img {
-  object-position: center center;
-  transform: translateX(-14%) scale(1.8);
-}
-
-.staff-profile-image.staff-profile-bradyn:hover img,
-.staff-profile-image.staff-profile-bradyn:focus-within img {
-  transform: translateX(-14%) scale(1.9);
+  object-position: center 35%;
 }
 
 @media (min-width: 861px) {
   .staff-profile-image.staff-profile-lacey img {
-    transform: scale(1.6);
+    transform: scale(2.2);
   }
 
   .staff-profile-image.staff-profile-lacey:hover img,
   .staff-profile-image.staff-profile-lacey:focus-within img {
-    transform: scale(1.7);
-  }
-}
-
-@media (min-width: 861px) {
-  .staff-profile-image.staff-profile-bradyn img {
-    transform: translate(-22%, 15%) scale(1.85);
-  }
-
-  .staff-profile-image.staff-profile-bradyn:hover img,
-  .staff-profile-image.staff-profile-bradyn:focus-within img {
-    transform: translate(-22%, 15%) scale(1.95);
+    transform: scale(2.3);
   }
 }
 
@@ -1708,15 +1687,6 @@ select {
   .staff-profile-image:hover img,
   .staff-profile-image:focus-within img {
     transform: none;
-  }
-
-  .staff-profile-image.staff-profile-bradyn img {
-    transform: translateX(-14%) scale(1.8);
-  }
-
-  .staff-profile-image.staff-profile-bradyn:hover img,
-  .staff-profile-image.staff-profile-bradyn:focus-within img {
-    transform: translateX(-14%) scale(1.9);
   }
 
   .team-section-title {

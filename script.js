@@ -108,14 +108,13 @@ const localStaffPhotos = {
   'Cecilia Trujillo': 'assets/employee-images/Cecilia-scaled.jpg',
   'Colton Jones': 'assets/employee-images/Colton-scaled.jpg',
   'Lichelle Fewkes': 'assets/employee-images/Lichelle-scaled.jpg',
-  'Bradyn Hattendorf': 'assets/employee-images/Bradyn.jpg?v=2',
+  'Bradyn Hattendorf': 'assets/employee-images/Bradyn-headshot.jpg',
   'Becky Dalton': 'assets/employee-images/Becky-scaled.jpg',
   'Sydney Rasmussen': 'assets/employee-images/Sydney-scaled.jpg',
   'April Laupapa': 'assets/employee-images/April.jpg',
   'Renee Madsen': 'assets/employee-images/Renee-scaled.jpg',
   'Lexi Murray': 'assets/employee-images/Lexi-scaled.jpg',
   'Whitney Hill': 'Emplolyee%20Images/WhitneyHill-scaled.jpg',
-  'Amber Paul': 'Emplolyee%20Images/AmberJPG.jpg',
   'Heidi Josephson': 'Emplolyee%20Images/HeidiJosephson.png',
 };
 
