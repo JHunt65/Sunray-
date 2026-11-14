@@ -13,5 +13,10 @@
     "active listening for parents",
     "family counseling in Utah"
   ],
-  "automaticPublishingConfigured": false
+  "automaticPublishingConfigured": true,
+  "releaseTime": "2026-11-20T00:00:00-07:00",
+  "publicationMechanisms": [
+    "GitHub Actions",
+    "hosting cron"
+  ]
 }

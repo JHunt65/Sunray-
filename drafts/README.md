@@ -1,6 +1,6 @@
 # Unpublished blog drafts
 
-“Building Better Communication at Home” is held until Friday, November 20, 2026 (America/Denver). Do not publish it earlier or add it to public blog listings. A tested GitHub Actions publication workflow is prepared in `.github/workflows/publish-scheduled-blog.yml`; see `assets/scheduled-blog/README.md` for activation and live-site deployment status.
+“Building Better Communication at Home” is held until Friday, November 20, 2026 (America/Denver). Do not publish it earlier or add it to public blog listings. GitHub Actions publication and the live hosting cron are active; see `assets/scheduled-blog/README.md` for the verified deployment and schedule details. The manual steps below are a fallback only.
 
 Preview locally at `/drafts/building-better-communication-at-home.html`. The current `assets/deploy.sh` copies top-level pages and public assets, excluding this drafts directory.
 
