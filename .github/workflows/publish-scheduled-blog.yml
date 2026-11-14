@@ -1,0 +1,45 @@
+name: Publish scheduled blog
+
+on:
+  schedule:
+    # Every 15 minutes during Nov 20–22; the publisher enforces the year
+    # and midnight America/Denver (07:00 UTC) release time.
+    - cron: '7,22,37,52 * 20-22 11 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scheduled-blog-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check scheduled publication
+        run: python assets/scheduled-blog/publish.py
+      - name: Commit published article
+        shell: bash
+        run: |
+          git add -- index.html our-blog.html
+          for path in building-better-communication-at-home.html assets/blog-family-communication-photo.jpg; do
+            if [ -f "$path" ]; then
+              git add -- "$path"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No articles are due for publication."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publish Building Better Communication at Home"
+          git push origin HEAD:main
