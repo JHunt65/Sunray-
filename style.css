@@ -1382,7 +1382,6 @@ select {
 }
 
 .blog-name .blog-wordmark {
-  position: relative;
   display: inline-block;
   margin: 0;
   font: inherit;
@@ -1390,17 +1389,6 @@ select {
   letter-spacing: inherit;
   text-transform: none;
   white-space: nowrap;
-}
-
-.blog-wordmark::before {
-  content: "";
-  position: absolute;
-  width: 1.25em;
-  height: 1.25em;
-  top: -0.42em;
-  left: -0.56em;
-  background: url('assets/sunray-original-gold-sun.svg') center / contain no-repeat;
-  pointer-events: none;
 }
 
 @media (max-width: 640px) {
