@@ -423,7 +423,13 @@ select {
   white-space: nowrap;
 }
 
-.office-hours-time {
+.office-hours-card {
+  container-type: inline-size;
+}
+
+.office-hours-line {
+  display: block;
+  font-size: min(1rem, 4.5cqi);
   white-space: nowrap;
 }
 
