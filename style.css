@@ -1381,28 +1381,6 @@ select {
   color: var(--brand-teal-2);
 }
 
-.blog-name .blog-wordmark {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  font: inherit;
-  color: inherit;
-  letter-spacing: inherit;
-  text-transform: none;
-  white-space: nowrap;
-}
-
-.blog-wordmark::before {
-  content: "";
-  position: absolute;
-  width: 0.95em;
-  height: 0.95em;
-  top: -0.55em;
-  left: -0.35em;
-  background: url('assets/sunray-original-gold-sun.svg') center / contain no-repeat;
-  pointer-events: none;
-}
-
 @media (max-width: 640px) {
   .hero-sunshine {
     width: 72px;
