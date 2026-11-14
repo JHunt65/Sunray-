@@ -364,8 +364,8 @@ select {
 }
 
 .section-primary {
-  background: linear-gradient(135deg, #0b6e85 0%, #0f82a2 100%);
-  color: white;
+  background: #99cdcc;
+  color: #102a43;
 }
 
 #contact.section-primary {
@@ -463,13 +463,13 @@ select {
 }
 
 .contact-icon-phone {
-  color: #0b6e85;
+  color: #99cdcc;
   background: #d8f0f4;
   border: 1px solid rgba(11, 110, 133, 0.25);
 }
 
 .contact-icon-email {
-  color: #0b6e85;
+  color: #99cdcc;
   background: #d8f0f4;
   border: 1px solid rgba(11, 110, 133, 0.25);
   position: relative;
@@ -477,7 +477,7 @@ select {
 }
 
 .contact-icon-fax {
-  color: #0b6e85;
+  color: #99cdcc;
   background: #d8f0f4;
   border: 1px solid rgba(11, 110, 133, 0.25);
   position: relative;
@@ -566,7 +566,7 @@ select {
 
 .staff-group-title {
   margin: 2rem 0 0.9rem;
-  color: #0b6e85;
+  color: #99cdcc;
 }
 
 .owners-title {
@@ -744,9 +744,9 @@ select {
   margin-left: -2.5%;
   padding: 0.84rem 1.5rem;
   border-radius: 0.45rem;
-  border: 2px solid #0b6e85;
-  background: #0b6e85;
-  color: #ffffff;
+  border: 2px solid #99cdcc;
+  background: #99cdcc;
+  color: #102a43;
   font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
   font-size: clamp(1.47rem, 2.352vw, 2.205rem);
   font-weight: 700;
@@ -789,7 +789,7 @@ select {
   justify-content: space-between;
   gap: 1rem;
   margin: 1.52rem 0 1.2rem;
-  color: #0b6e85;
+  color: #99cdcc;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
@@ -992,7 +992,7 @@ select {
 
 .staff-specialties h2 {
   margin: 0 0 1rem;
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: 1.5rem;
 }
 
@@ -1038,7 +1038,7 @@ select {
 
 .staff-specialty-linked a:focus-visible,
 .service-learn-more:focus-visible {
-  outline: 2px solid #0b6e85;
+  outline: 2px solid #99cdcc;
   outline-offset: 3px;
 }
 
@@ -1129,7 +1129,7 @@ select {
 
 .staff-bio-copy h1 {
   margin: 0;
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: clamp(2.2rem, 4vw, 4rem);
 }
 
@@ -1217,7 +1217,7 @@ select {
   text-transform: uppercase;
   letter-spacing: 0.17em;
   font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.78);
+  color: #34516d;
   margin-bottom: 0.4rem;
 }
 
@@ -1239,7 +1239,7 @@ select {
 .contact-panel p,
 .contact-panel strong,
 .contact-panel a {
-  color: white;
+  color: #102a43;
 }
 
 .contact-card {
@@ -1308,7 +1308,7 @@ select {
   margin: 0;
   font-size: 1.15rem;
   line-height: 1.2;
-  color: #0b6e85;
+  color: #99cdcc;
 }
 
 .blog-preview-copy p {
@@ -1320,13 +1320,13 @@ select {
   display: inline-flex;
   margin-top: 0.8rem;
   font-weight: 700;
-  color: #0b6e85;
+  color: #99cdcc;
   border-bottom: 2px solid rgba(11, 110, 133, 0.25);
   padding-bottom: 0.05rem;
 }
 
 .blog-preview-copy a:hover {
-  color: #08718c;
+  color: #99cdcc;
   border-bottom-color: rgba(8, 113, 140, 0.5);
 }
 
@@ -1340,7 +1340,7 @@ select {
   padding: 0.5rem 1rem;
   background: #ffffff;
   border: 1px solid var(--brand-teal-2);
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: 0.85rem;
   font-weight: 400;
   box-shadow: none;
@@ -1393,7 +1393,7 @@ select {
 
 .blog-article-header h1 {
   margin: 0 0 1.5rem;
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
@@ -1419,7 +1419,7 @@ select {
 
 .blog-article-body h2 {
   margin: 2.5rem 0 1rem;
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: 1.8rem;
 }
 
@@ -1428,7 +1428,7 @@ select {
 }
 
 .blog-article-body a {
-  color: #0b6e85;
+  color: #99cdcc;
   text-decoration: underline;
   text-underline-offset: 0.2em;
   overflow-wrap: anywhere;
@@ -1449,7 +1449,7 @@ select {
 }
 
 .blog-table-scroll:focus-visible {
-  outline: 2px solid #0b6e85;
+  outline: 2px solid #99cdcc;
   outline-offset: 3px;
 }
 
@@ -1465,7 +1465,7 @@ select {
   padding: 1rem;
   text-align: left;
   font-weight: 600;
-  color: #0b6e85;
+  color: #99cdcc;
 }
 
 .blog-comparison-table th,
@@ -1499,7 +1499,7 @@ select {
 
 .blog-related-services h2 {
   margin-top: 0;
-  color: #0b6e85;
+  color: #99cdcc;
 }
 
 .service-grid {
@@ -1521,7 +1521,7 @@ select {
 
 .service-card h3 {
   margin-bottom: 0;
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: 1.5rem;
 }
 
@@ -1574,7 +1574,7 @@ select {
 
 .service-breadcrumb a,
 .service-back {
-  color: #0b6e85;
+  color: #99cdcc;
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
@@ -1590,7 +1590,7 @@ select {
 .service-detail-heading h1,
 .section-header h1 {
   margin: 0;
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: clamp(2rem, 5vw, 3.5rem);
   overflow-wrap: anywhere;
 }
@@ -1606,12 +1606,12 @@ select {
 
 .service-detail-copy h2 {
   margin: 2rem 0 0.75rem;
-  color: #0b6e85;
+  color: #99cdcc;
   font-size: 1.75rem;
 }
 
 .service-detail-copy a {
-  color: #0b6e85;
+  color: #99cdcc;
   text-decoration: underline;
   text-underline-offset: 0.2em;
   overflow-wrap: anywhere;
@@ -1642,7 +1642,7 @@ select {
 
 .service-detail-contact h2 {
   margin-top: 0;
-  color: #0b6e85;
+  color: #99cdcc;
 }
 
 .service-actions {
@@ -1682,7 +1682,7 @@ select {
   margin: 0;
   font-family: "Londrina Solid", Georgia, "Times New Roman", serif;
   font-size: 1.3rem;
-  color: #0b6e85;
+  color: #99cdcc;
 }
 
 .footer-copy {
@@ -1709,13 +1709,13 @@ select {
 }
 
 .social-facebook {
-  color: #0b6e85;
+  color: #99cdcc;
   background: #fff4d9;
   border-color: rgba(230, 179, 71, 0.5);
 }
 
 .social-instagram {
-  color: #0b6e85;
+  color: #99cdcc;
   background: #fff4d9;
   border-color: rgba(230, 179, 71, 0.5);
 }
@@ -1802,7 +1802,7 @@ select {
 
 .back-to-top {
   font-weight: 700;
-  color: #0b6e85;
+  color: #99cdcc;
 }
 
 .faq-page .section-header {
@@ -2206,10 +2206,10 @@ body.staff-page main > .section {
   text-transform: uppercase;
   color: #9ac9c2;
   text-shadow:
-    -2px -2px 0 #0b6e85,
-    2px -2px 0 #0b6e85,
-    -2px 2px 0 #0b6e85,
-    2px 2px 0 #0b6e85,
+    -2px -2px 0 #99cdcc,
+    2px -2px 0 #99cdcc,
+    -2px 2px 0 #99cdcc,
+    2px 2px 0 #99cdcc,
     0 4px 10px rgba(11, 110, 133, 0.35);
   z-index: 2;
   width: 100%;
@@ -2324,10 +2324,10 @@ body.staff-page main > .section {
   text-transform: uppercase;
   max-width: 100%;
   text-shadow:
-    -1px -1px 0 #0b6e85,
-    1px -1px 0 #0b6e85,
-    -1px 1px 0 #0b6e85,
-    1px 1px 0 #0b6e85;
+    -1px -1px 0 #99cdcc,
+    1px -1px 0 #99cdcc,
+    -1px 1px 0 #99cdcc,
+    1px 1px 0 #99cdcc;
 }
 
 
