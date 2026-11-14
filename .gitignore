@@ -1,0 +1,13 @@
+# Local macOS metadata and hosting connection settings
+.DS_Store
+/.vscode/sftp.json
+
+# Original generated PNGs; the website uses the committed JPG versions
+/assets/blog-child-stress-cover.png
+/assets/blog-child-stress-photo.png
+/assets/blog-emdr-vs-art-comparison.png
+/assets/blog-emdr-vs-art-cover.png
+/assets/blog-emdr-vs-art-photo.png
+/assets/blog-getting-started-cover.png
+/assets/blog-getting-started-photo.png
+/drafts/building-better-communication-at-home/cover.png
