@@ -1388,7 +1388,7 @@ select {
   height: 1.25em;
   margin-right: 0.3em;
   vertical-align: -0.2em;
-  background: url('assets/sunray-sunshine.svg') center / contain no-repeat;
+  background: url('assets/sunray-original-gold-sun.svg') center / contain no-repeat;
 }
 
 @media (max-width: 640px) {
