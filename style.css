@@ -423,6 +423,10 @@ select {
   white-space: nowrap;
 }
 
+.office-hours-time {
+  white-space: nowrap;
+}
+
 .about-grid,
 .cards-grid,
 .locations-grid {
