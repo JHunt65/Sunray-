@@ -1272,6 +1272,13 @@ select {
   background: #fff4d9;
 }
 
+#contact .contact-panel-main .contact-page-button {
+  display: flex;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .contact-card {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
