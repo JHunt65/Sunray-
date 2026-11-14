@@ -429,7 +429,7 @@ select {
 
 .office-hours-line {
   display: block;
-  font-size: min(1rem, 4.5cqi);
+  font-size: min(1.125rem, 5.45cqi);
   white-space: nowrap;
 }
 
