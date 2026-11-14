@@ -204,7 +204,7 @@ select {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 5rem 0 4rem;
+  padding: 5rem 0 clamp(6rem, 9vw, 8rem);
 }
 
 .hero-grid {
@@ -252,6 +252,26 @@ select {
 .hero > .container {
   position: relative;
   z-index: 2;
+}
+
+.hero-sunshine {
+  position: absolute;
+  z-index: 1;
+  top: 1.5rem;
+  right: max(4%, calc((100vw - 1250px) / 2));
+  width: clamp(80px, 12vw, 170px);
+  height: auto;
+  pointer-events: none;
+}
+
+.hero-clouds {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: -1px;
+  width: 100%;
+  height: clamp(45px, 7vw, 100px);
+  pointer-events: none;
 }
 
 .hero-visual {
@@ -1332,6 +1352,30 @@ select {
 
 .section-header .blog-name {
   color: var(--brand-teal-2);
+}
+
+.blog-name::before {
+  content: "";
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.3em;
+  vertical-align: -0.2em;
+  background: url('assets/sunray-sunshine.svg') center / contain no-repeat;
+}
+
+@media (max-width: 640px) {
+  .hero-sunshine {
+    width: 72px;
+    top: 0.5rem;
+    right: 0.75rem;
+  }
+
+  .hero-clouds {
+    height: 45px;
+    width: 160%;
+    max-width: none;
+  }
 }
 
 .button.blog-explore-button {
