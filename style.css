@@ -1384,6 +1384,11 @@ select {
 .blog-name .blog-wordmark {
   position: relative;
   display: inline-block;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  text-transform: none;
   white-space: nowrap;
 }
 
